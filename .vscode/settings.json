@@ -1,5 +1,6 @@
 {
   "files.exclude": {
+    ".github": true,
     "dist": true,
     "node_modules": true,
     ".gitignore": true,
