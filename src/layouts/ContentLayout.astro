@@ -12,7 +12,6 @@ import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 
 export interface Props {
   title: string;
@@ -21,9 +20,10 @@ export interface Props {
 
 const { title, date } = Astro.props;
 const formattedDate = new Date(date).toLocaleDateString("en-us", {
-  year: "numeric",
-  month: "short",
+  month: "long",
   day: "numeric",
+  year: "numeric",
+  timeZone: "UTC"
 });
 ---
 
@@ -59,14 +59,12 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
         <slot name="content" />
       </section>
     </main>
-    <Footer />
     <style>
       body {
         display: grid;
         grid-template-areas:
           "header"
-          "main"
-          "footer";
+          "main";
         grid-template-rows: 5rem minmax(0, 1fr) 5rem;
         grid-template-columns: minmax(0, 1fr);
       }

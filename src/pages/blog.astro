@@ -20,7 +20,7 @@ const sortedPosts = posts
 ---
 
 <PageLayout>
-  <PageMeta title={`Blog | ${SITE_TITLE}`} slot="meta" />
+  <PageMeta title={`Posts | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
     <ul>
       {
@@ -31,6 +31,7 @@ const sortedPosts = posts
             year: "numeric",
             month: "short",
             day: "numeric",
+            timeZone: "UTC"
           });
           return (
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">

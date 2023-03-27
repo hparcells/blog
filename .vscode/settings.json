@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "dist": true,
+    "node_modules": true,
+    ".gitignore": true,
+    "astro.config.mjs": true,
+    "ASTRO.md": true,
+    "package-lock.json": true,
+    "README.md": true,
+    "tailwind.config.cjs": true,
+    "tsconfig.json": true
+  }
+}
