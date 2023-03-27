@@ -1,9 +1,9 @@
 {
-  "name": "blog",
+  "name": "blogster-bubblegum",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev -p 8000",
+    "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

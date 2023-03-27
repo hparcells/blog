@@ -14,10 +14,11 @@ import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
-<html class="theme-sleek" lang="en">
+<html class="theme-bubblegum" lang="en">
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -31,18 +32,20 @@ import Header from "../components/Header.astro";
   </head>
 
   <body
-    class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8"
+    class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8"
   >
     <Header />
     <main id="main">
       <slot name="main" />
     </main>
+    <Footer />
     <style>
       body {
         display: grid;
         grid-template-areas:
           "header"
-          "main";
+          "main"
+          "footer";
         grid-template-rows: 5rem minmax(0, 1fr) 5rem;
         grid-template-columns: minmax(0, 1fr);
       }

@@ -1,47 +1,32 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import Nav from "./Nav.astro";
 import DarkModeToggle from "./DarkModeToggle.astro";
 ---
 
-<header>
+<header class="">
   <a
     class="unset absolute z-10 left-[50%] -top-[100rem] translate-x-[-50%] bg-white text-black px-8 py-2 focus:top-[initial]"
     href="#main"
   >
     Skip to content
   </a>
-  <nav>
-    <section class="text-text-bold">
-      <ul class="unset flex gap-4 [&>li]:p-0">
-        <li><HeaderLink href="/">Home</HeaderLink></li>
-        <li><HeaderLink href="/blog">Blog</HeaderLink></li>
-      </ul>
-    </section>
-  </nav>
+  <Nav />
   <div
-    class="max-[375px]:hidden justify-self-end py-2 flex items-center content-center text-text-bold"
+    class="justify-self-end py-2 flex items-center content-center text-text-bold"
   >
     <a
-      class="unset text-xl ml-4 hover:text-text-link"
-      href="https://github.com/hparcells"
-      target='_blank'
-      >
-      <i
-        class="fa-brands fa-github"
-        aria-hidden="true"
-        title="Hunter on GitHub"></i>
-        <span class="fa-sr-only">Hunter on GitHub</span>
-      </a>
-      <a
-      class="unset text-xl ml-4 hover:text-text-link"
-      href="https://twitter.com/hunterparcells"
-      target='_blank'
+      class="unset ml-4 rounded-sm transition-[background-size] duration-150 ease-in-out bg-left-bottom bg-[length:0%_55%] hover:bg-[length:100%_55%] bg-no-repeat bg-gradient-to-r from-primary-yellow to-primary-yellow dark:bg-none dark:hover:text-primary-yellow"
+      href="https://github.com/flexdinesh/blogster"
     >
-      <i
-        class="fa-brands fa-twitter"
-        aria-hidden="true"
-        title="Hunter on Twitter"></i>
-      <span class="fa-sr-only">Hunter on Twitter</span>
+      <i class="fa-brands fa-github" aria-hidden="true" title="Blogster on GitHub"></i>
+      <span>GitHub</span>
+    </a>
+    <a
+      class="unset ml-4 rounded-sm transition-[background-size] duration-150 bg-left-bottom bg-[length:0%_55%] hover:bg-[length:100%_55%] bg-no-repeat bg-gradient-to-r from-primary-blue to-primary-blue dark:bg-none dark:hover:text-primary-blue"
+      href="https://twitter.com/flexdinesh"
+    >
+      <i class="fa-brands fa-twitter" aria-hidden="true" title="Dinesh on Twitter"></i>
+      <span>Twitter</span>
     </a>
   </div>
   <DarkModeToggle />
