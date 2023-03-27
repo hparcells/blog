@@ -3,7 +3,7 @@ external: false
 draft: false
 title: Hello World!
 description: The first blog post on the new website.
-date: 2023-11-05
+date: 2023-03-27
 ---
 
 A short blog post to start out with. As explained on the landing page, this website was built with [Astro](https://astro.build) and a [Blogster](https://github.com/flexdinesh/blogster) template. I loved the way this template had the "highlighted" effect on the landing page just as [my website](http://hunterparcells.com/) does.
