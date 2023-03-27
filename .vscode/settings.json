@@ -6,9 +6,11 @@
     ".gitignore": true,
     "astro.config.mjs": true,
     "ASTRO.md": true,
+    "cspell.json": true,
     "package-lock.json": true,
     "README.md": true,
     "tailwind.config.cjs": true,
     "tsconfig.json": true
-  }
+  },
+  "discord.enabled": false
 }
