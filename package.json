@@ -1,9 +1,9 @@
 {
-  "name": "blogster-sleek",
+  "name": "blog",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev -p 8000",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
