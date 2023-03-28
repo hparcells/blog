@@ -2,7 +2,6 @@
 title: Hello World!
 description: The first blog post on the new website.
 date: 2023-03-27
-external: false
 draft: false
 unlisted: false
 ---
