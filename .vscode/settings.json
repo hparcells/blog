@@ -3,7 +3,9 @@
     ".github": true,
     "dist": true,
     "node_modules": true,
+    ".eslintrc": true,
     ".gitignore": true,
+    ".prettierrc": true,
     "astro.config.mjs": true,
     "ASTRO.md": true,
     "cspell.json": true,
@@ -12,5 +14,6 @@
     "tailwind.config.cjs": true,
     "tsconfig.json": true
   },
-  "discord.enabled": false
+  "discord.enabled": false,
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"]
 }

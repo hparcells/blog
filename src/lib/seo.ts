@@ -7,7 +7,7 @@ type PageMeta = {
 type PageOgMeta = {
   title: string; // page title
   description?: string; // page description
-  type: "website";
+  type: 'website';
   url?: string; // site URL
   image?: string; // preview image
   imageAlt?: string; // alt text for preview image
@@ -18,7 +18,7 @@ type PageOgMeta = {
 type PageTwitterMeta = {
   title: string; // same as og:title
   description?: string; // same as og:description
-  card: "summary_large_image";
+  card: 'summary_large_image';
   site?: string; // twitter handle (@username) of blog owner
   creator?: string; // twitter handle (@username) of content owner (usually same as blog owner)
   image?: string; // same as og:image
@@ -28,7 +28,7 @@ type PageTwitterMeta = {
 type BlogPostOgMeta = {
   title: string; // page title
   description?: string; // page description
-  type: "article";
+  type: 'article';
   url?: string; // blog post url
   author?: string; // post author name
   // siteName?: string; // page title
@@ -42,7 +42,7 @@ type BlogPostOgMeta = {
 type BlogPostTwitterMeta = {
   title: string; // same as blog post og:title
   description?: string; // same as blog post og:description
-  card: "summary_large_image";
+  card: 'summary_large_image';
   site?: string; // twitter handle (@username) of blog owner
   creator?: string; // twitter handle (@username) of content owner (usually same as blog owner)
   image?: string; // same as blog post  og:image
@@ -58,7 +58,7 @@ export function getPageMeta({
   ogImageWidth,
   ogImageHeight,
   siteOwnerTwitterHandle,
-  contentAuthorTwitterHandle,
+  contentAuthorTwitterHandle
 }: {
   title: string;
   description: string;
@@ -71,12 +71,10 @@ export function getPageMeta({
   contentAuthorTwitterHandle?: string;
 }): { meta: PageMeta; og: PageOgMeta; twitter: PageTwitterMeta } {
   if (!pageTitle) {
-    throw Error("title is required for page SEO");
+    throw Error('title is required for page SEO');
   }
   if (ogImageAbsoluteUrl) {
-    ogImageAltText = !ogImageAltText
-      ? `Preview image for ${pageTitle}`
-      : ogImageAltText;
+    ogImageAltText = !ogImageAltText ? `Preview image for ${pageTitle}` : ogImageAltText;
     // ogImageWidth = !ogImageWidth ? 1200 : ogImageWidth;
     // ogImageHeight = !ogImageHeight ? 627 : ogImageHeight;
   }
@@ -86,28 +84,28 @@ export function getPageMeta({
   const og: PageOgMeta = {
     title: pageTitle,
     description: description,
-    type: "website",
+    type: 'website',
     url: baseUrl,
     image: ogImageAbsoluteUrl,
     imageAlt: ogImageAltText,
     imageWidth: ogImageWidth ? String(ogImageWidth) : undefined,
-    imageHeight: ogImageHeight ? String(ogImageHeight) : undefined,
+    imageHeight: ogImageHeight ? String(ogImageHeight) : undefined
   };
 
   const twitter: PageTwitterMeta = {
     title: pageTitle,
     description: description,
-    card: "summary_large_image",
+    card: 'summary_large_image',
     site: siteOwnerTwitterHandle,
     creator: contentAuthorTwitterHandle || siteOwnerTwitterHandle,
     image: ogImageAbsoluteUrl,
-    imageAlt: ogImageAltText,
+    imageAlt: ogImageAltText
   };
 
   return {
     meta,
     og,
-    twitter,
+    twitter
   };
 }
 
@@ -123,7 +121,7 @@ export function getBlogPostMeta({
   ogImageWidth,
   ogImageHeight,
   siteOwnerTwitterHandle,
-  contentAuthorTwitterHandle,
+  contentAuthorTwitterHandle
 }: {
   title: string;
   description: string;
@@ -139,7 +137,7 @@ export function getBlogPostMeta({
   contentAuthorTwitterHandle?: string;
 }): { meta: PageMeta; og: BlogPostOgMeta; twitter: BlogPostTwitterMeta } {
   if (!pageTitle) {
-    throw Error("title is required for page SEO");
+    throw Error('title is required for page SEO');
   }
   if (ogImageAbsoluteUrl && !ogImageAltText) {
     ogImageAltText = `Preview image for ${pageTitle}`;
@@ -148,35 +146,35 @@ export function getBlogPostMeta({
   const meta: PageMeta = {
     title: pageTitle,
     description: description,
-    canonicalUrl,
+    canonicalUrl
   };
 
   const og: BlogPostOgMeta = {
     title: pageTitle,
     description: description,
-    type: "article",
+    type: 'article',
     url: pageUrl,
     author: authorName,
     publishDate: publishDate,
     image: ogImageAbsoluteUrl,
     imageAlt: ogImageAltText,
     imageWidth: ogImageWidth ? String(ogImageWidth) : undefined,
-    imageHeight: ogImageHeight ? String(ogImageHeight) : undefined,
+    imageHeight: ogImageHeight ? String(ogImageHeight) : undefined
   };
 
   const twitter: BlogPostTwitterMeta = {
     title: pageTitle,
     description: description,
-    card: "summary_large_image",
+    card: 'summary_large_image',
     site: siteOwnerTwitterHandle,
     creator: contentAuthorTwitterHandle || siteOwnerTwitterHandle,
     image: ogImageAbsoluteUrl,
-    imageAlt: ogImageAltText,
+    imageAlt: ogImageAltText
   };
 
   return {
     meta,
     og,
-    twitter,
+    twitter
   };
 }

@@ -1,18 +1,17 @@
 ---
-import { readOne, readAll } from "../../lib/markdoc/read";
-import Renderer from "../../components/Renderer.astro";
-import BlogPostMeta from "../../components/BlogPostMeta.astro";
-import ContentLayout from "../../layouts/ContentLayout.astro";
-import { SITE_URL } from "../../config";
-import { postSchema } from "src/lib/markdoc/frontmatter.schema";
+import { readOne, readAll } from '../../lib/markdoc/read';
+import Renderer from '../../components/Renderer.astro';
+import BlogPostMeta from '../../components/BlogPostMeta.astro';
+import ContentLayout from '../../layouts/ContentLayout.astro';
+import { SITE_URL } from '../../config';
+import { postSchema } from 'src/lib/markdoc/frontmatter.schema';
 
 export async function getStaticPaths() {
   const posts = await readAll({
-    directory: "blog",
-    frontmatterSchema: postSchema,
+    directory: 'blog',
+    frontmatterSchema: postSchema
   });
 
-  // we don't want to generate pages for posts that link to external websites
   const filteredPosts = posts.filter((p) => {
     return !p.frontmatter.draft;
   });
@@ -23,14 +22,14 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-if (typeof slug !== "string") {
+if (typeof slug !== 'string') {
   throw Error(`slug should be string. Received: ${slug}`);
 }
 
 const { content, frontmatter } = await readOne({
-  directory: "blog",
+  directory: 'blog',
   slug,
-  frontmatterSchema: postSchema,
+  frontmatterSchema: postSchema
 });
 
 const ogImageAbsoluteUrl = frontmatter.ogImagePath
@@ -45,7 +44,7 @@ const ogImageAbsoluteUrl = frontmatter.ogImagePath
     publishDate={frontmatter.date.toISOString()}
     pagePath={`/blog/${slug}`}
     ogImageAbsoluteUrl={ogImageAbsoluteUrl}
-    slot="meta"
+    slot='meta'
   />
-  <Renderer content={content} slot="content" />
+  <Renderer content={content} slot='content' />
 </ContentLayout>

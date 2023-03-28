@@ -1,17 +1,22 @@
 {
-    "words": [
-        "astro",
-        "astrojs",
-        "Blogster",
-        "Dinesh",
-        "frontmatter",
-        "Grotesk",
-        "hunterparcells",
-        "markdoc",
-        "microblogging",
-        "Pandiyan",
-        "Parcells",
-        "tailwindcss",
-        "tsconfigs"
-    ]
+  "words": [
+    "astro",
+    "astrojs",
+    "Blogster",
+    "codepen",
+    "cond",
+    "Dinesh",
+    "frontmatter",
+    "githubgist",
+    "Grotesk",
+    "hunterparcells",
+    "isnan",
+    "markdoc",
+    "microblogging",
+    "Pandiyan",
+    "Parcells",
+    "parens",
+    "tailwindcss",
+    "tsconfigs"
+  ]
 }
