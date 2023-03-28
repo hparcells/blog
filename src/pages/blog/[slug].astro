@@ -12,9 +12,7 @@ export async function getStaticPaths() {
     frontmatterSchema: postSchema
   });
 
-  const filteredPosts = posts.filter((p) => {
-    return !p.frontmatter.draft;
-  });
+  const filteredPosts = posts;
 
   return filteredPosts.map((post) => {
     return { params: { slug: post.slug } };

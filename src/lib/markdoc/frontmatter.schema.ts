@@ -19,6 +19,5 @@ export const postSchema = z.object({
       invalid_type_error: 'ogImagePath must be a string'
     })
     .optional(),
-  draft: z.boolean().default(false),
   unlisted: z.boolean().default(false)
 });

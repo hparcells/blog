@@ -14,6 +14,7 @@ async function parseAndTransform({ content }: { content: string }) {
 
   const errors = Markdoc.validate(ast, config);
   if (errors.length) {
+    // eslint-disable-next-line no-console
     console.error(errors);
     throw new Error('Markdoc validation error');
   }

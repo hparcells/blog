@@ -12,7 +12,7 @@ const posts = await readAll({
 
 const sortedPosts = posts
   .filter((p) => {
-    return !p.frontmatter.draft && !p.frontmatter.unlisted;
+    return !p.frontmatter.unlisted;
   })
   .sort((a, b) => {
     return new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf();

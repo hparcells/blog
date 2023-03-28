@@ -9,11 +9,9 @@ export const get = async () => {
     frontmatterSchema: postSchema
   });
 
-  const sortedPosts = posts
-    .filter((p) => p.frontmatter.draft !== true)
-    .sort(
-      (a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
-    );
+  const sortedPosts = posts.sort((a, b) => {
+    return new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf();
+  });
 
   let baseUrl = SITE_URL;
   // removing trailing slash if found
