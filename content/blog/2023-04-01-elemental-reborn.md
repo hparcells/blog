@@ -35,7 +35,26 @@ On September 13th, 2020, Elemental 3 was shut down after scaling issues and poor
 
 ## How It Was Made
 
+Like many projects of mine, I suspected this to take around two *weeks* to make, but actually largely thrown together over the course of two *days*, to get the core functionality down.
+
+The game used [React](https://react.dev/) using a [MongoDB](https://www.mongodb.com/) database hosted on [MongoDB Atlas](https://www.mongodb.com/atlas/database) (no ORM) with an [Express](https://expressjs.com/) backend. Though it has moved servers multiple times, it is currently hosted on a server of my own.
+
+Instead of anyone logging on and creating elements, I opted to use a **Google login** for players to create and suggest elements. Otherwise, a "Guest" could play, and only find existing elements. Since I was relatively new to backend development, I didn't have experience with user authentication, and thought this would be a convenient method for both myself and the players.
+
+There were a number of features that I did want to add or fix, but had never gotten around to doing:
+- I wanted to add **Pioneer Notes**, the properties on the elements were already there, but I never implemented a input for the pioneer to enter a note. Of course, this content would need to be somewhat moderated, which was also something I didn't really want to deal with.
+- The **autoscrolling** in the game when you created a new element was really janky, and would scroll you to the top of the element type group instead of the newly created element. You could see how this could be bad when a user has hundreds or thousands of elements in their possession.
+- I wanted a way to **sync a user's game progress to their Google login**. This would require me storing the game state of each player in the database, which would become quite sizable, and possibly costly because of using a SaaS database.
+- Changing elements was quite hard. For example if an element had a faulty character that needed to be removed, it would not be updated on the game clients, as **game state was stored in local storage**.
+  - If I rename an element, the name would not be consistent across clients.
+  - If I wanted to remove an element, it required my hand-modifying elements within the database and their links/references.
+
+Many lessons were learned with input validation, as players loved submitting blank characters, really wide characters, emojis, etc... onto elements. I ended up removing many of these elements, but much of the damage was already done before I could roll an update out, and changing elements was hard for reasons listed above. A few elements of this kind can still be found.
+
+Surprisingly, I totally forgot to `.trim()` element names, which ended up in a few elements looking identical or even elements appearing blank, but instead having one, two, or  three spaces in them. I really hated this but it would have been too much work to fix and it had been abused multiple times already.
+
 ## The End?
 
-## Season 2?
+## "Season 2"
 
+## The End
