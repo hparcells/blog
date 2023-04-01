@@ -98,5 +98,4 @@ Elemental Reborn has been one of the most fun projects I have worked on, and has
 
 Support has stopped, but watching the element count trickle up, and coming back to the game every so often to play has been entertaining. It's been interesting seeing the hobbies and interests of the playerbase coming together to create many different elements based around various games, books, and movies.
 
-If the deprecation does indeed break the game for players to play, I will include a data dump of all the existing elements and their recipes int a CSV file or a big spreadsheet.
-
+If the deprecation does indeed break the game for players to play, I will include a data dump of all the existing elements and their recipes into a CSV file or a big spreadsheet.
