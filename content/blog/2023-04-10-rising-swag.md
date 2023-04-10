@@ -63,7 +63,7 @@ Shops like Redbubble and TeeSpring allow you to upload a single design and apply
 
 ### "This looks familiar..."
 
-I had mentioned how easy it is to create designs and products on Redbubble due to the drag-and-drop nature of shops and production being outsourced. Because it's so easy, I had noticed a number of products using the same design but from different shops/authors. I'm not exactly sure if something nefarious is happening, such as art and designs being stolen, or if someone saw a design and tried to adapt it (doubtful, some designs are 1:1).
+I had mentioned how easy it is to create designs and products on Redbubble due to the drag-and-drop nature of shops and production being outsourced. Because it's so easy, I had noticed a number of products using the same design but from different shops/authors. I'm not exactly sure if something nefarious is happening, such as art and designs being stolen, or if someone saw a design and tried to adapt it.
 
 ![](/images/2023-04-10-rising-swag/similar-1.png)
 
