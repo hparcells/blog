@@ -3,6 +3,7 @@
     "astro",
     "astrojs",
     "autoscrolling",
+    "Badali",
     "Blogster",
     "carykh",
     "codepen",
@@ -12,19 +13,24 @@
     "frontmatter",
     "gameplay",
     "githubgist",
+    "grindy",
     "Grotesk",
     "hunterparcells",
     "isnan",
     "janky",
+    "Mantine",
     "markdoc",
+    "merch",
     "microblogging",
     "Pandiyan",
     "paperdave",
     "Parcells",
     "parens",
     "playerbase",
+    "Redbubble",
     "tailwindcss",
     "tsconfigs",
-    "upvotes"
+    "upvotes",
+    "xkcd"
   ]
 }
