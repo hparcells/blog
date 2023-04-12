@@ -74,3 +74,22 @@ What many occupations have done is providing multiple monitors to their employee
 ## Virtual Reality and the Elderly
 
 ## References
+### DOI
+
+- 10.1177/1471301219868036
+- 10.1145/3380959
+- 10.1111/bjet.13030
+- 10.1186/s40561-021-00166-7
+- 10.1007/s00391-010-0124-7
+
+### Other
+
+- https://www.cnn.com/2017/12/13/health/virtual-reality-vr-dangers-safety/index.html
+
+### Images
+
+- https://www.sjpl.org/virtual-reality
+- https://tophat.com/blog/smart-choices-tech-classroom/
+- https://azednews.com/technology-classroom-increases-creativity-decreases-discipline-issues/
+- https://vrscout.com/news/lenovo-vr-classroom-3-new-updates/
+- https://eriecountypa.gov/departments/public-safety/divisions/911-center/
