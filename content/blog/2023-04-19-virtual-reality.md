@@ -11,7 +11,9 @@ Specifically, I am talking about *immersive* virtual reality (IVR), the type of 
 
 ![](/images/2023-04-19-virtual-reality/virtual-reality-1.png)
 
-When mainstream virtual reality once became popular, there was [doubt and concern cast upon the technology](https://www.cnn.com/2017/12/13/health/virtual-reality-vr-dangers-safety/). There were many concerns about the adverse side effects, both physically and socially. Even [online forums](https://reddit.com/r/VRtoER) were opened, dedicated to only posting photos and videos of people injuring themselves while using virtual reality. These critics did have a good reason to be concerned though. Virtual reality offered a place where you could escape the world, talk with people on the other side of the planet, and was host to countless streams of entertainment.
+When mainstream virtual reality once became popular, there was [doubt and concern cast upon the technology](https://www.cnn.com/2017/12/13/health/virtual-reality-vr-dangers-safety/). There were many concerns about the adverse side effects, both physically and socially. Even [online forums](https://reddit.com/r/VRtoER) were opened, dedicated to only posting photos and videos of people injuring themselves while using virtual reality.
+
+These critics did have a good reason to be concerned though. Virtual reality offered a place where you could escape the world, talk with people on the other side of the planet, and was host to countless streams of entertainment.
 
 However, virtual reality can be used for more than just entertainment.
 
@@ -153,7 +155,7 @@ As creators continue to innovate, consumers must keep an open mind and embrace t
 
 Artificial intelligence has been evolving at an unfathomable rate, and at the moment we only seem to be poking at it like children and seeing how it reacts. Robotics has still been top of mind, as to what it can do in the future.
 
-And now virtual reality, over many hurdles, has been more relevant and affordable than ever, and as history has shown itself, innovation begets innovation. Who knows where this technology will go.
+And now virtual reality, over many hurdles, has been more relevant and affordable than ever, and as history has shown itself, innovation begets innovation. Who knows where this technology will go next.
 
 ## References
 ### DOI
