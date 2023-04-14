@@ -5,7 +5,9 @@ date: 2023-04-19
 unlisted: true
 ---
 
-What's the most useful tool you own? Your phone? A laptop? These devices do provide us with a nearly infinite stream of information and knowledge, but there is a device, virtual reality, that can do all that and so much more. Behind the plastic goggles is a place where you can do nearly anything. Play games, watch movies, meditate, join chat rooms, exercise, explore the world, you name it.
+What's the most useful tool you own? Your phone? A laptop?
+
+These devices do provide us with a nearly infinite stream of information and knowledge, but there is a device, virtual reality, that can do all that and so much more. Behind the plastic goggles is a place where you can do nearly anything. Play games, watch movies, meditate, join chat rooms, exercise, explore the world, you name it.
 
 Specifically, I am talking about *immersive* virtual reality (IVR), the type of virtual reality provided by headsets like the Oculus Rift, HTC Vive, PlayStation VR, and others... just to name a few. These products have become more and more popular as they have become more affordable and more content has been published for them.
 
@@ -77,7 +79,7 @@ What many occupations have done is providing multiple monitors to their employee
 
 While multitasking can be easier and more information can be displayed at the same time, the use of multiple, especially large, monitors comes with some drawbacks. Mcgill, in his report, addresses this issue when discussing the issues brought up when using three or more monitors:
 
-> Viewing wider display spaces leads to the activation of different muscle groups than viewing a single display. Nimbarte *et al.* noted that "Increased activation of anterior neck muscles caused by asymmetrical, more rotated head1-neck postures... may increase the risk of neck musculoskeletal disorders, especially with prolonged computer use"
+> Viewing wider display spaces leads to the activation of different muscle groups than viewing a single display. Nimbarte *et al.* noted that "Increased activation of anterior neck muscles caused by asymmetrical, more rotated head-neck postures... may increase the risk of neck musculoskeletal disorders, especially with prolonged computer use"
 
 In their research, Mcgill and his team aimed to find the benefits of using a "virtual workspace" versus a traditional workspace. One key difference that Mcgill investigated was the difference between using deadzones and mapping the head angle of the user to the head angle displayed to the user in virtual reality.
 
