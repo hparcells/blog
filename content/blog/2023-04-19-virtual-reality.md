@@ -2,7 +2,7 @@
 title: "The Hidden Powers of Virtual Reality"
 description: How virtual reality can help students, adults, and the elderly.
 date: 2023-04-19
-unlisted: true
+unlisted: false
 ---
 
 What's the most useful tool you own? Your phone? A laptop?
