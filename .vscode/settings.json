@@ -15,6 +15,12 @@
     "tailwind.config.cjs": true,
     "tsconfig.json": true
   },
-  "discord.enabled": false,
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"]
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro",
+    "typescript",
+    "typescriptreact"
+  ],
+  "discord.enabled": true
 }
